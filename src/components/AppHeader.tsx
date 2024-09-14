@@ -8,7 +8,7 @@ const AppHeader = () => {
     const {t} = useTranslation()
     return <View>
         <Text style={styles.title}>
-            {t('home_header_title')}
+            {t(resourcesKey.homeHeaderTitle)}
         </Text>
     </View>
 }

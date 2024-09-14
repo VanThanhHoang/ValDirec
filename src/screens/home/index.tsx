@@ -1,13 +1,13 @@
 import {View, Text, StyleSheet, StatusBar} from 'react-native';
-import React, {useTransition} from 'react';
+import React from 'react';
 import {appColor} from '@/theme';
 import AppHeader from '@/components/AppHeader';
-import {useTranslation, Trans} from 'react-i18next';
+import HomeMenu from './components/HomeMenu';
 const HomeScreen = () => {
-  const {t} = useTranslation();
   return (
     <View style={styles.container}>
       <AppHeader />
+      <HomeMenu/>
     </View>
   );
 };

@@ -1,3 +1,10 @@
 {
-  "home_header_title": "Valorant guide"
+  "HOME_TITLE": "Valorant guide",
+  "AGENTS": "AGENTS",
+  "WEAPONS": "WEAPONS",
+  "RANKS": "RANKS",
+  "SPRAYS": "SPRAYS",
+  "PLAYER_CARDS": "PLAYER CARDS",
+  "MAPS": "MAPS",
+  "GUN_BUDDIES": "GUN BUDDIES"
 }

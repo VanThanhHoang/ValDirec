@@ -6,7 +6,14 @@ export enum LanguageKey {
   VI = 'vi',
 }
 export enum resourcesKey {
-  homeHeaderTitle = 'home_header_title',
+  homeHeaderTitle = 'HOME_TITLE',
+  agents = 'AGENTS',
+  weapons = 'WEAPONS',
+  ranks = 'RANKS',
+  sprays = 'SPRAYS',
+  playerCards = 'PLAYER_CARDS',
+  maps = 'MAPS',
+  gunbuddies = 'GUN_BUDDIES',
 }
 const resources = {
   [LanguageKey.EN]: {
@@ -17,7 +24,7 @@ const resources = {
   },
 };
 i18next.use(initReactI18next).init({
-  lng: LanguageKey.EN,
+  lng: LanguageKey.VI,
   fallbackLng: LanguageKey.EN,
   interpolation: {
     escapeValue: false,

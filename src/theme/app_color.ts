@@ -1,6 +1,6 @@
 const appColor = {
     background: '#131d29',
-    borderColor: '#dd3f4d',
+    borderColor: '#b63948',
     textColor: '#fff',
 }
 export default appColor;
