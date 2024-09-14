@@ -17,7 +17,7 @@ const SplashScreen = () => {
   useEffect(() => {
     setTimeout(() => {
       navigateToHome();
-    }, 3000);
+    }, 1000);
   });
   return (
     <View style={styles.container}>

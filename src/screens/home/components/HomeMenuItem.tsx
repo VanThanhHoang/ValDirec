@@ -3,11 +3,19 @@ import {StyleSheet, TouchableOpacity, View, Text, Image} from 'react-native';
 import {HomeMenuItemProps} from '../type';
 import {appColor} from '@/theme';
 import {useTranslation} from 'react-i18next';
+import {useNavigation} from '@react-navigation/native';
+import {AppNavigationProp, ScreenName} from '@/navigation/types';
 
 const HomeMenuItem = ({menuItem}: {menuItem: HomeMenuItemProps}) => {
   const {t} = useTranslation();
+  const navigation = useNavigation<AppNavigationProp>();
+  const openScreen = (screenName: ScreenName) => {
+    navigation.navigate(screenName);
+  };
   return (
-    <TouchableOpacity activeOpacity={0.7}>
+    <TouchableOpacity onPress={() => {
+      openScreen(menuItem.screen);
+    }} activeOpacity={0.7}>
       <View style={styles.container}>
         <View style={styles.contentContainer}>
           <View style={styles.textContainer}>

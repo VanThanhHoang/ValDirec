@@ -1,3 +1,4 @@
 import appImage from './image';
 import appAnimations from './animations';
-export {appImage,appAnimations};
+import appIcons from './icon';
+export {appImage,appAnimations,appIcons};

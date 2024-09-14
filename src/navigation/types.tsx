@@ -5,6 +5,7 @@ import {
 export enum ScreenName {
   SplashScreen = 'SplashScreen',
   HomeScreen = 'HomeScreen',
+  AgentScreen = 'AgentScreen',
 }
 export type ScreenProps = {
   name: ScreenName;
@@ -14,5 +15,6 @@ export type ScreenProps = {
 type RootStackParamList = {
   [ScreenName.SplashScreen]: undefined;
   [ScreenName.HomeScreen]: undefined;
+  [ScreenName.AgentScreen]: undefined
 };
 export type AppNavigationProp = StackNavigationProp<RootStackParamList>;

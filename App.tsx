@@ -1,13 +1,19 @@
+import { LoadingModal } from '@/components';
 import {AppNavigator} from '@/navigation';
+import { store } from '@/redux';
 import {appColor} from '@/theme';
-import {StatusBar, StyleSheet, View} from 'react-native';
+import {StatusBar, StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import { Provider } from 'react-redux';
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <Provider store={store}>
+      <SafeAreaView style={styles.container}>
       <StatusBar barStyle={'light-content'} />
       <AppNavigator />
+      <LoadingModal/>
     </SafeAreaView>
+    </Provider>
   );
 };
 const styles = StyleSheet.create({
